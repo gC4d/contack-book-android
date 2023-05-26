@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.FormAddActivity">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/act_form_tfName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="15dp"
+        android:inputType="textCapWords"
+        android:hint="Nome"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/act_form_tfEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/act_form_tfName"
+        tools:layout_editor_absoluteX="29dp"
+        android:layout_margin="15dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/act_form_tfPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/act_form_tfEmail"
+        android:layout_margin="15dp"
+        android:inputType="phone"
+        android:hint="Telefone"
+
+        />
+    <Button
+        android:id="@+id/act_form_add_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/act_form_tfPhone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Adicionar"
+        android:textSize="10pt"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
